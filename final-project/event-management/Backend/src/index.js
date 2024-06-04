@@ -127,7 +127,7 @@ app.delete('/api/registrations/:id', async (req, res) => {
 
 let server;
 if (require.main === module) {
-  server = app.listen(3000, async () => {
+  server = app.listen(5120, async () => {
     await sequelize.sync({ force: true });
     console.log('Server is running on port 3000');
   });
